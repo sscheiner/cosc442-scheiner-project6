@@ -24,11 +24,13 @@ WebUI.openBrowser('')
 
 WebUI.navigateToUrl('https://www.phptravels.net/login')
 
-WebUI.setText(findTestObject('Page_Login/input_username'), 'user@phptravels.com')
+WebUI.setText(findTestObject('Page_Login (7)/input_username'), 'user@phptravels.com')
 
-WebUI.setText(findTestObject('Page_Login/input_password'), 'demouser')
+WebUI.setText(findTestObject('Page_Login (7)/input_password'), 'demouser')
 
-WebUI.sendKeys(findTestObject('Page_Login/input_password'), Keys.chord(Keys.ENTER))
+WebUI.sendKeys(findTestObject('Page_Login (7)/input_password'), Keys.chord(Keys.ENTER))
+
+WebUI.verifyElementPresent(findTestObject('Page_My Account (5)/div_Hi DVhbCERv IlqEZZxz'), 0)
 
 WebUI.closeBrowser()
 

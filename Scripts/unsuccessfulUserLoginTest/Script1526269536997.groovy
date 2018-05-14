@@ -24,11 +24,13 @@ WebUI.openBrowser('')
 
 WebUI.navigateToUrl('https://www.phptravels.net/login')
 
-WebUI.setText(findTestObject('Page_Login (1)/input_username'), 'test@fakeemail.com')
+WebUI.setText(findTestObject('Page_Login (8)/input_username'), 'user@phptravels.com')
 
-WebUI.setText(findTestObject('Page_Login (1)/input_password'), 'blargh')
+WebUI.setText(findTestObject('Page_Login (8)/input_password'), 'blargh')
 
-WebUI.sendKeys(findTestObject('Page_Login (1)/input_password'), Keys.chord(Keys.ENTER))
+WebUI.sendKeys(findTestObject('Page_Login (8)/input_password'), Keys.chord(Keys.ENTER))
+
+WebUI.verifyElementPresent(findTestObject('Page_Login (8)/div_Invalid Email or Password'), 0)
 
 WebUI.closeBrowser()
 

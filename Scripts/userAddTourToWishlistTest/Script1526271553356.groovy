@@ -24,15 +24,19 @@ WebUI.openBrowser('')
 
 WebUI.navigateToUrl('https://www.phptravels.net/login')
 
-WebUI.setText(findTestObject('Page_Login (6)/input_username'), 'user@phptravels.com')
+WebUI.setText(findTestObject('Page_Login (11)/input_username'), 'user@phptravels.com')
 
-WebUI.setText(findTestObject('Page_Login (6)/input_password'), 'demouser')
+WebUI.setText(findTestObject('Page_Login (11)/input_password'), 'demouser')
 
-WebUI.sendKeys(findTestObject('Page_Login (6)/input_password'), Keys.chord(Keys.ENTER))
+WebUI.sendKeys(findTestObject('Page_Login (11)/input_password'), Keys.chord(Keys.ENTER))
 
-WebUI.click(findTestObject('Page_My Account (4)/span_Tours'))
+WebUI.click(findTestObject('Page_My Account (8)/a_Tours'))
 
-WebUI.click(findTestObject('Page_Tours Listings (2)/button_Details'))
+WebUI.click(findTestObject('Page_Tours Listings (3)/button_Details'))
+
+WebUI.click(findTestObject('Page_6 Days Around Thailand/span_Add to wishlist'))
+
+WebUI.verifyElementPresent(findTestObject('Page_6 Days Around Thailand/span_Remove from wishlist'), 0)
 
 WebUI.closeBrowser()
 

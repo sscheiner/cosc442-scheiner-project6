@@ -22,15 +22,37 @@ import org.openqa.selenium.Keys as Keys
 
 WebUI.openBrowser('')
 
-WebUI.navigateToUrl('https://www.phptravels.net/supplier')
+WebUI.navigateToUrl('https://www.phptravels.net/admin')
 
-WebUI.setText(findTestObject('Page_Supplier Login (3)/input_email'), 'supplier@phptravels.com')
+WebUI.setText(findTestObject('Page_Administator Login (4)/input_email'), 'admin@phptravels.com')
 
-WebUI.setText(findTestObject('Page_Supplier Login (3)/input_password'), 'blargh')
+WebUI.setText(findTestObject('Page_Administator Login (4)/input_password'), 'demoadmin')
 
-WebUI.click(findTestObject('Page_Supplier Login (3)/button_Login'))
+WebUI.sendKeys(findTestObject('Page_Administator Login (4)/input_password'), Keys.chord(Keys.ENTER))
 
-WebUI.verifyElementPresent(findTestObject('Page_Supplier Login (3)/div_Invalid Login Credentials'), 0)
+WebUI.click(findTestObject('Page_Dashboard (2)/a_Add New'))
+
+WebUI.setText(findTestObject('Page_Add Tour/input_tourname'), 'test')
+
+WebUI.click(findTestObject('Page_Add Tour/html_Rich Text Editor tourdesc'))
+
+WebUI.setText(findTestObject('Page_Add Tour/input_maxadult'), '1')
+
+WebUI.setText(findTestObject('Page_Add Tour/input_adultprice'), '10')
+
+WebUI.setText(findTestObject('Page_Add Tour/input_tourdays'), '1')
+
+WebUI.selectOptionByValue(findTestObject('Page_Add Tour/select_Select'), '1', true)
+
+WebUI.setText(findTestObject('Page_Add Tour/input_tournights'), '1')
+
+WebUI.click(findTestObject('Page_Add Tour/div_select2-drop-mask'))
+
+WebUI.setText(findTestObject('Page_Add Tour/input_select2-input select2-fo'), 'washington')
+
+WebUI.click(findTestObject('Page_Add Tour/button_Submit'))
+
+WebUI.verifyElementPresent(findTestObject('Page_Tours Management/td_test'), 0)
 
 WebUI.closeBrowser()
 

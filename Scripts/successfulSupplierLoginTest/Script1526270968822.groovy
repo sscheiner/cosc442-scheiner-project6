@@ -24,11 +24,13 @@ WebUI.openBrowser('')
 
 WebUI.navigateToUrl('https://www.phptravels.net/supplier')
 
-WebUI.setText(findTestObject('Page_Supplier Login (1)/input_email'), 'supplier@phptravels.com')
+WebUI.setText(findTestObject('Page_Supplier Login (2)/input_email'), 'supplier@phptravels.com')
 
-WebUI.setText(findTestObject('Page_Supplier Login (1)/input_password'), 'demosupplier')
+WebUI.setText(findTestObject('Page_Supplier Login (2)/input_password'), 'demosupplier')
 
-WebUI.sendKeys(findTestObject('Page_Supplier Login (1)/input_password'), Keys.chord(Keys.ENTER))
+WebUI.sendKeys(findTestObject('Page_Supplier Login (2)/input_password'), Keys.chord(Keys.ENTER))
+
+WebUI.verifyElementPresent(findTestObject('Page_Dashboard (1)/nav_Toggle navigation'), 0)
 
 WebUI.closeBrowser()
 

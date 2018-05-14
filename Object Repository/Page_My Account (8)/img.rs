@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>img</name>
+   <tag></tag>
+   <elementGuidId>1cf81cb0-0b71-4058-9ca4-3cb6fb060aa6</elementGuidId>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>img</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>src</name>
+      <type>Main</type>
+      <value>https://www.phptravels.net/themes/default/assets/img/icons/tour.png</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;offcanvas-menu&quot;)/ul[@class=&quot;main-menu go-left RTL&quot;]/li[@class=&quot;main-lnk&quot;]/a[@class=&quot;loader&quot;]/span[@class=&quot;nav-icon hidden-xs&quot;]/img[1]</value>
+   </webElementProperties>
+</WebElementEntity>

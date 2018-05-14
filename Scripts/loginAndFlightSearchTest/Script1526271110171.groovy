@@ -24,35 +24,29 @@ WebUI.openBrowser('')
 
 WebUI.navigateToUrl('https://www.phptravels.net/login')
 
-WebUI.setText(findTestObject('Page_Login (4)/input_username'), 'user@phptravels.com')
+WebUI.setText(findTestObject('Page_Login (10)/input_username'), 'user@phptravels.com')
 
-WebUI.setText(findTestObject('Page_Login (4)/input_password'), 'demouser')
+WebUI.setText(findTestObject('Page_Login (10)/input_password'), 'demouser')
 
-WebUI.sendKeys(findTestObject('Page_Login (4)/input_password'), Keys.chord(Keys.ENTER))
+WebUI.click(findTestObject('Page_Login (10)/button_Login'))
 
-WebUI.click(findTestObject('Page_My Account (2)/span_Flights'))
+WebUI.click(findTestObject('Page_My Account (7)/a_Flights'))
 
-WebUI.click(findTestObject('Page_Flights (2)/span_One way'))
+WebUI.setText(findTestObject('Page_Flights (4)/input_airports-inline-orig-53f'), 'bwi')
 
-WebUI.setText(findTestObject('Page_Flights (2)/input_airports-inline-orig-725'), 'bwi')
+WebUI.sendKeys(findTestObject('Page_Flights (4)/input_airports-inline-orig-53f'), Keys.chord(Keys.ENTER))
 
-WebUI.sendKeys(findTestObject('Page_Flights (2)/input_airports-inline-orig-725'), Keys.chord(Keys.ENTER))
+WebUI.setText(findTestObject('Page_Flights (4)/input_airports-inline-dest-53f'), 'mke')
 
-WebUI.setText(findTestObject('Page_Flights (2)/input_airports-inline-dest-725'), 'mke')
+WebUI.sendKeys(findTestObject('Page_Flights (4)/input_airports-inline-dest-53f'), Keys.chord(Keys.ENTER))
 
-WebUI.sendKeys(findTestObject('Page_Flights (2)/input_airports-inline-dest-725'), Keys.chord(Keys.ENTER))
+WebUI.click(findTestObject('Page_Flights (4)/button_31'))
 
-WebUI.sendKeys(findTestObject('Page_Flights (2)/body_window._api          _api'), Keys.chord(Keys.ENTER))
+WebUI.click(findTestObject('Page_Flights (4)/span_Continue with 1 traveller'))
 
-WebUI.click(findTestObject('Page_Flights (2)/span_Close'))
+WebUI.click(findTestObject('Page_Flights (4)/span_Search'))
 
-WebUI.click(findTestObject('Page_Flights (2)/span_'))
-
-WebUI.click(findTestObject('Page_Flights (2)/button_14'))
-
-WebUI.click(findTestObject('Page_Flights (2)/span_Continue with 1 traveller'))
-
-WebUI.click(findTestObject('Page_Flights (2)/button_Search'))
+WebUI.verifyElementPresent(findTestObject('Page_Flights (4)/span_Filter Results'), 0)
 
 WebUI.closeBrowser()
 

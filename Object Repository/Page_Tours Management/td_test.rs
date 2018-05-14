@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>td_test</name>
+   <tag></tag>
+   <elementGuidId>4986668e-5d6e-41df-aaa2-733b0369ef4c</elementGuidId>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>td</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>test</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;content&quot;)/div[@class=&quot;panel panel-default&quot;]/div[@class=&quot;panel-body&quot;]/div[@class=&quot;xcrud&quot;]/div[@class=&quot;xcrud-container&quot;]/div[@class=&quot;xcrud-ajax&quot;]/div[@class=&quot;xcrud-list-container&quot;]/table[@class=&quot;xcrud-list table table-striped table-hover&quot;]/tbody[1]/tr[@class=&quot;xcrud-row xcrud-row-0&quot;]/td[5]</value>
+   </webElementProperties>
+</WebElementEntity>

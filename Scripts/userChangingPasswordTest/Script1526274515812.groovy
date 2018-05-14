@@ -22,15 +22,37 @@ import org.openqa.selenium.Keys as Keys
 
 WebUI.openBrowser('')
 
-WebUI.navigateToUrl('https://www.phptravels.net/supplier')
+WebUI.navigateToUrl('https://www.phptravels.net/login')
 
-WebUI.setText(findTestObject('Page_Supplier Login (3)/input_email'), 'supplier@phptravels.com')
+WebUI.setText(findTestObject('Page_Login (13)/input_username'), 'user@phptravels.com')
 
-WebUI.setText(findTestObject('Page_Supplier Login (3)/input_password'), 'blargh')
+WebUI.setText(findTestObject('Page_Login (12)/input_password'), 'demouser')
 
-WebUI.click(findTestObject('Page_Supplier Login (3)/button_Login'))
+WebUI.sendKeys(findTestObject('Page_Login (12)/input_password'), Keys.chord(Keys.ENTER))
 
-WebUI.verifyElementPresent(findTestObject('Page_Supplier Login (3)/div_Invalid Login Credentials'), 0)
+WebUI.click(findTestObject('Page_My Account (9)/a_DVhbCERv'))
+
+WebUI.click(findTestObject('Page_My Account (9)/a_Account'))
+
+WebUI.click(findTestObject('Page_My Account (9)/a_My Profile'))
+
+WebUI.setText(findTestObject('Page_My Account (9)/input_password'), 'newpass')
+
+WebUI.setText(findTestObject('Page_My Account (9)/input_confirmpassword'), 'newpass')
+
+WebUI.click(findTestObject('Page_My Account (9)/button_Submit'))
+
+WebUI.click(findTestObject('Page_My Account (9)/a_DVhbCERv'))
+
+WebUI.click(findTestObject('Page_My Account (9)/a_Logout'))
+
+WebUI.setText(findTestObject('Page_Login (13)/input_username'), 'user@phptravels.com')
+
+WebUI.setText(findTestObject('Page_Login (12)/input_password'), 'newpass')
+
+WebUI.click(findTestObject('Page_Login (12)/button_Login'))
+
+WebUI.verifyElementPresent(findTestObject('Page_My Account (9)/div_Hi DVhbCERv IlqEZZxz'), 0)
 
 WebUI.closeBrowser()
 
