@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>admin enters valid login credentials</description>
+   <name>unccessfulAdminLoginTest</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>62a8a5a2-cffc-446e-85c3-c518ad5b6fe3</testCaseGuid>
+</TestCaseEntity>

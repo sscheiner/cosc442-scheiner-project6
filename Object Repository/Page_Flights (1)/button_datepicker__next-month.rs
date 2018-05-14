@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>button_datepicker__next-month</name>
+   <tag></tag>
+   <elementGuidId>57d620cc-fe0a-45b3-9b51-d73e97b7f2b6</elementGuidId>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>button</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>type</name>
+      <type>Main</type>
+      <value>button</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>datepicker__next-month</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>ng-click</name>
+      <type>Main</type>
+      <value>::move(1)</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tabindex</name>
+      <type>Main</type>
+      <value>-1</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>/html[@class=&quot;ng-scope&quot;]/body[@class=&quot;ts-in-i-frame ltr&quot;]/div[@class=&quot;page-wrapper&quot;]/main[@class=&quot;content ng-scope&quot;]/div[@class=&quot;content-wrapper ng-scope&quot;]/section[@class=&quot;search&quot;]/section[1]/search-form[@class=&quot;ng-isolate-scope&quot;]/div[@class=&quot;ng-scope&quot;]/div[@class=&quot;search-floating-input ng-scope ng-isolate-scope&quot;]/ts-search-depart-date[@class=&quot;floating-datepicker ng-scope ng-isolate-scope&quot;]/div[@class=&quot;popup&quot;]/div[@class=&quot;popup-body&quot;]/div[@class=&quot;datepicker ng-isolate-scope ng-valid&quot;]/div[@class=&quot;datepicker__heading&quot;]/button[@class=&quot;datepicker__next-month&quot;]</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>ref_element</name>
+      <type>Main</type>
+      <value>Object Repository/Page_Flights (1)/iframe_travelstartIframe-dd7d2</value>
+   </webElementProperties>
+</WebElementEntity>
