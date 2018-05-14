@@ -18,16 +18,21 @@ import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUiBuiltInKeywords
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
+import org.openqa.selenium.Keys as Keys
 
 WebUI.openBrowser('')
 
-WebUI.navigateToUrl('https://www.phptravels.net/supplier')
+WebUI.navigateToUrl('https://www.phptravels.net/login')
 
-WebUI.setText(findTestObject('Page_Supplier Login (1)/input_email'), 'supplier@phptravels.com')
+WebUI.setText(findTestObject('Page_Login (6)/input_username'), 'user@phptravels.com')
 
-WebUI.setText(findTestObject('Page_Supplier Login (1)/input_password'), 'blargh')
+WebUI.setText(findTestObject('Page_Login (6)/input_password'), 'demouser')
 
-WebUI.submit(findTestObject(null))
+WebUI.sendKeys(findTestObject('Page_Login (6)/input_password'), Keys.chord(Keys.ENTER))
+
+WebUI.click(findTestObject('Page_My Account (4)/span_Tours'))
+
+WebUI.click(findTestObject('Page_Tours Listings (2)/button_Details'))
 
 WebUI.closeBrowser()
 

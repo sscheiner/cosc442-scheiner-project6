@@ -24,11 +24,13 @@ WebUI.openBrowser('')
 
 WebUI.navigateToUrl('https://www.phptravels.net/admin')
 
-WebUI.setText(findTestObject('Page_Administator Login/input_email'), 'nottheadmin@phptravels.com')
+WebUI.setText(findTestObject('Page_Administator Login (3)/input_email'), 'admin@phptravels.com')
 
-WebUI.setText(findTestObject('Page_Administator Login/input_password'), 'blargh')
+WebUI.setText(findTestObject('Page_Administator Login (3)/input_password'), 'demoadmin')
 
-WebUI.sendKeys(findTestObject('Page_Administator Login/input_password'), Keys.chord(Keys.ENTER))
+WebUI.click(findTestObject('Page_Administator Login (3)/span_Login'))
+
+WebUI.verifyElementPresent(findTestObject('Page_Dashboard/a_DASHBOARD'), 0)
 
 WebUI.closeBrowser()
 
