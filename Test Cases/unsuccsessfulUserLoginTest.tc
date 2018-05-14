@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description>User navigates to login page from homepage, and enters an invalid user/password combo</description>
-   <name>unsuccsessfulUserLoginTest</name>
-   <tag></tag>
-   <comment></comment>
-   <testCaseGuid>4bfe8c1b-4630-4747-86f8-ccb168ce5193</testCaseGuid>
-</TestCaseEntity>

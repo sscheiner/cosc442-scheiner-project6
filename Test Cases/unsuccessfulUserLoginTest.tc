@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>user enters invalid login credentials</description>
+   <name>unsuccessfulUserLoginTest</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>c9fd7349-e246-4064-b255-05bc1a06d184</testCaseGuid>
+</TestCaseEntity>
